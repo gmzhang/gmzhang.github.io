@@ -1,0 +1,15 @@
+title: Make a better world!
+author: gmzhang
+description: I am the person, who love peaceful, nature, simple life, and like challenge myself a lot.
+
+highlighter: null
+permalink: /:title
+
+url:
+baseurl:
+
+sass:
+    sass_dir: public/css
+    style: :compressed
+
+google_analytics_tracking_id: G-RD1DSHZ3YL
