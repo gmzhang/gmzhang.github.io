@@ -6,8 +6,8 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <pubDate>Sat, 31 Oct 2020 11:45:17 +0800</pubDate>
-    <lastBuildDate>Sat, 31 Oct 2020 11:45:17 +0800</lastBuildDate>
+    <pubDate>Mon, 10 Oct 2022 23:20:18 +0800</pubDate>
+    <lastBuildDate>Mon, 10 Oct 2022 23:20:18 +0800</lastBuildDate>
 
     
       <item>
@@ -17,7 +17,7 @@
         <author></author>
         <description>&lt;p&gt;&lt;img src=&quot;/public/images/2020-10-21/design-doc.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;现代软件工程的全过程，有两个阶段非常关键：一个是 “产品设计”，一个是 “架构设计”。&lt;strong&gt;产品设计由产品经理主导，关注的是 “如何以产品特性来系统化地满足用户需求”&lt;/strong&gt;。&lt;strong&gt;架构设计由架构师主导，关注的是 “业务系统如何系统化地进行分解与交付”&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;111现代软件工程的全过程，有两个阶段非常关键：一个是 “产品设计”，一个是 “架构设计”。&lt;strong&gt;产品设计由产品经理主导，关注的是 “如何以产品特性来系统化地满足用户需求”&lt;/strong&gt;。&lt;strong&gt;架构设计由架构师主导，关注的是 “业务系统如何系统化地进行分解与交付”&lt;/strong&gt;。&lt;/p&gt;
 
 &lt;p&gt;“设计” 一词非常精妙。无论是 “产品设计”，还是 “架构设计”，其实谈的都是 “需求如何被满足” 这件事情的共识。&lt;/p&gt;
 
@@ -25,7 +25,7 @@
 
 &lt;p&gt;本质上所有 “设计文档” 的内容组织逻辑，都应该是相通的。它们的内容大体如下：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. 现状 ：我们在哪里，现状是什么样的？
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. 现状 ：我们在哪里，现状是什么样的？
 2. 需求：我们的问题或诉求是什么，要做何改进？
 3. 需求满足方式：
 
@@ -35,7 +35,7 @@
 
 &lt;p&gt;设计文档要素的关键在于以下几点。&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. 现状：不要长篇累牍。现状更多的是陈述与我们要做的改变相关的重要事实，侧重于**强调这些事实的存在性和重要性**。
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. 现状：不要长篇累牍。现状更多的是陈述与我们要做的改变相关的重要事实，侧重于**强调这些事实的存在性和重要性**。
 2. 需求：同样不需要长篇累牍。痛点只要够痛，大家都知道，所以**需求陈述是对痛点和改进方向的一次共识确认**。
 3. 需求满足方式：要详写，**把我们的设计方案谈清楚**。具体来说，它包括 “交付物规格” 和 “实现原理” 两个方面。
 4. 交付物规格，**或者说使用界面，体现的是别人要怎么使用我**。对于 “产品设计”，交付物规格可能是 “产品原型”。对于 “架构设计”，交付物规格可能是 “网络 API 协议” 或者 “包（package）导出的公开类或函数”。
@@ -50,7 +50,7 @@
 
 &lt;p&gt;一篇设计文档有时候不是只有一个设计方案，而是有多个可能的需求实现方式。在这个时候，通常我们会概要地描述清楚两个设计方案的本质差别，并且从如下这些维度进行对比：&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. 方案的易实施性与可维护性。
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. 方案的易实施性与可维护性。
 2. 方案的时间复杂度与空间复杂度。
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -81,13 +81,13 @@
 
 &lt;p&gt;无论是否要画 UML 时序图，在表达上伪代码（Pseudo Code）的设计都是必需的。&lt;strong&gt;伪代码的表达方式及语义需要在团队内形成默契&lt;/strong&gt;。这种伪代码的语义表达必须是精确的。&lt;/p&gt;
 
-&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;请求&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;json&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+&lt;div class=&quot;language-go highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;请求&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;json&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
-&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;返回&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ret&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;json&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;返回&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ret&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;json&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;可以使用 API 来表达&lt;/p&gt;
 
