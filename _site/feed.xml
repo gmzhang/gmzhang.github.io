@@ -6,8 +6,8 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <pubDate>Tue, 11 Oct 2022 12:57:46 +0800</pubDate>
-    <lastBuildDate>Tue, 11 Oct 2022 12:57:46 +0800</lastBuildDate>
+    <pubDate>Tue, 11 Oct 2022 13:01:12 +0800</pubDate>
+    <lastBuildDate>Tue, 11 Oct 2022 13:01:12 +0800</lastBuildDate>
 
     
       <item>
@@ -113,6 +113,8 @@ service ImageService {
   &lt;li&gt;Kubernetes 在早期版本中引入 CRI 摆脱依赖某个具体的容器运行时依赖，屏蔽底层的诸多实现细节，让 Kubernetes 能够更关注容器的编排；&lt;/li&gt;
   &lt;li&gt;Docker 本身不兼容 CRI 接口，而且官方并没有实现 CRI 的打算，同时也不支持容器的一些新需求，所以 Dockershim 的维护成为了社区的想要摆脱负担；&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;原文链接：https://draveness.me/whys-the-design-kubernetes-deprecate-docker/&lt;/p&gt;
 </description>
       </item>
     
