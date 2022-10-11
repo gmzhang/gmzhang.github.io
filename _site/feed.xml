@@ -6,9 +6,160 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <pubDate>Tue, 11 Oct 2022 09:10:36 +0800</pubDate>
-    <lastBuildDate>Tue, 11 Oct 2022 09:10:36 +0800</lastBuildDate>
+    <pubDate>Tue, 11 Oct 2022 09:29:03 +0800</pubDate>
+    <lastBuildDate>Tue, 11 Oct 2022 09:29:03 +0800</lastBuildDate>
 
+    
+      <item>
+        <title>如何做好技术管理</title>
+        <link>http://localhost:4000/%E5%A6%82%E4%BD%95%E5%81%9A%E5%A5%BD%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86</link>
+        <pubDate>Sat, 06 Mar 2021 00:00:00 +0800</pubDate>
+        <author></author>
+        <description>&lt;blockquote&gt;
+  &lt;p align=&quot;right&quot;&gt; &quot;管理即正确的做事，领导力即做正确的事” &lt;/p&gt;
+
+  &lt;p align=&quot;right&quot;&gt; “Management is doing things right; leadership is doing the right things.”&lt;/p&gt;
+
+  &lt;p align=&quot;right&quot;&gt;Peter Drucker, Effective Executives &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;软件工程是典型的现代知识工作。其中的“工程”两个字蕴含软件复杂度的本质挑战。我们讨论的软件，基本上都是在一定规模的组织（从几个人团队到几千人不等）内通过不同层次的协同来实现的。 技术管理者所面对的工程，已经不再是以数量来衡量价值产出的，而是如 Peter Drucker 所说的，是通过做正确的事，正确的做事来达成价值。而这些要求，正是卓越工程要解决的问题。因此技术管理是卓越工程的核心环节。&lt;br /&gt;本节重点在&lt;strong&gt;一线研发团队的技术管理实践&lt;/strong&gt;，不涉及更高层级管理者话题或者组织技术战略制定。&lt;/p&gt;
+
+&lt;h1 id=&quot;技术管理核心是支撑团队高效交付价值&quot;&gt;技术管理核心是支撑团队高效交付价值&lt;/h1&gt;
+&lt;p&gt;管理者的核心任务是支撑团队高效的交付价值。对于一个软件研发团队来说，交付的价值效率如何衡量？整个研发组织交付业务价值的过程是一个非常复杂的、包含了组织管理、工程效率（协同、复杂度、分析、维护成本）以及研发生产力的多个方面，且多个因素交织在一起的综合过程。 但是我们可以对于价值的交付效率做一个形式上的分解：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/images/tech_manage/tech_manage01.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;从这里可以看到，交付价值的过程，包含了三个相互关联的因素：&lt;/p&gt;
+
+&lt;p&gt;（1）&lt;strong&gt;做正确的事&lt;/strong&gt;：通过制定、传达、分解、分析，让团队目标确保在正确方向上，这可能是最关键的部分。&lt;/p&gt;
+
+&lt;p&gt;（2）&lt;strong&gt;工程的复杂度有多高&lt;/strong&gt;？正确的方向有了以后，完成一个研发项目/需求，需要多大的投入？这个过程涉及到方案的确定，其影响因素与需求自身的复杂度有关，但是也与系统本身的复杂度（历史负担，架构合理性）、完成需求的协同成本（一个团队可完成、需要多个团队？）等都有关系。 &lt;br /&gt;（3）&lt;strong&gt;干活效率如何&lt;/strong&gt;： 方向定了，方案也定了，剩下就是干活了。干活的效率和工程师的能力/成长，工具平台是否好用，研发流程是否合理，工作是否能专注有关。&lt;/p&gt;
+
+&lt;p&gt;而不同程度地帮助团队解决好上面几个方面的问题，这就是一线管理者应当发挥的作用。&lt;/p&gt;
+
+&lt;h1 id=&quot;做好技术管理者---理解技术团队&quot;&gt;做好技术管理者 - 理解技术团队&lt;/h1&gt;
+&lt;p&gt;首先我们来定义一线研发团队。 一线研发团队一般是由 IC 研发同学组成的，典型的团队由技术线研发工程师为主，有时有测试或者 PM 的同学支持。&lt;/p&gt;
+
+&lt;p&gt;研发团队是做什么的？&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;负责一个产品（或者产品模块）/或者系统/子系统的演进&lt;/strong&gt;（Conway 定律，就算这个团队一开始不是负责某个系统/产品，时间长了系统或者产品也会演变成围绕组织边界划分）&lt;/li&gt;
+  &lt;li&gt;因为负责相关的产品/模块/系统，&lt;strong&gt;交付业务所需要的需求、功能、部署和维护&lt;/strong&gt;（可能因为 DevOps / SRE 模型的不同这部分的分工有差异）。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/images/tech_manage/tech_manage02.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;从研发团队自身的定位，我们很容易看到，一个研发团队为了能够实现自身的职责，&lt;strong&gt;需要如下的角色&lt;/strong&gt;：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;技术负责人&lt;/strong&gt;：项目落实于产品/技术组件/系统，每个产品/系统需要有技术负责人，具体来说技术负责人职责 后面会单独讨论。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;人员管理&lt;/strong&gt;：招聘、绩效、人员日常的管理、团队协同、资源。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;项目管理者&lt;/strong&gt;：研发活动经常以项目形式组织，需要团队内外的协同，项目的推进需要项目管理者的参与，因此这是另一个团队所需要的角色。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;开发&lt;/strong&gt;：研发团队的开发同学。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/images/tech_manage/tech_manage03.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;注意角色是会兼任的，如一个人可以同时兼任技术负责人 + 开发。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;研发团队的管理者本身是覆盖哪些角色呢&lt;/strong&gt;？由于我们探讨的是管理者本身，因此“人员管理”的角色职责毫无疑问是在范围内的，那么剩下的就是技术负责人/项目管理，按照不同管理者的职责范围，就有了不同的模型。&lt;/p&gt;
+
+&lt;p&gt;理解团队组成和管理者本身的角色定位，是进一步讨论如何支持团队交付价值的基础。&lt;/p&gt;
+
+&lt;h1 id=&quot;技术管理者如何支撑团队交付价值&quot;&gt;技术管理者如何支撑团队交付价值&lt;/h1&gt;
+&lt;p&gt;整个技术团队整体，是以高效的交付价值为目标的。而如何高效交付价值，前面也分解了其中的三个关键要素。管理者在其中围绕交付价值的环节，通过支撑团队发挥作用。&lt;/p&gt;
+
+&lt;h2 id=&quot;1-明确目标---做正确的事&quot;&gt;1. 明确目标 - 做正确的事&lt;/h2&gt;
+&lt;p&gt;作为一线团队的主管，很多时候团队的定位和目标在大的组织里面是有相对清晰的定位的，这时，关键要确保&lt;strong&gt;信息的通畅&lt;/strong&gt;。之所以要信息通畅，是因为技术工作的重要特点是团队的一线成员会掌握实时的、更加细节的项目信息，通过信息通畅，才能更好的让团队在执行中避免信息偏差。公司目前推进的 OKR，就是为团队管理提供了面向价值、开放透明的工具。&lt;/p&gt;
+
+&lt;p&gt;如果作为技术管理者，在团队中需要寻找和定义目标，那么可以考虑几个原则：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;明确价值&lt;/strong&gt; - 把&lt;strong&gt;客户价值真正作为最重要的目标&lt;/strong&gt;：客户第一不仅仅是公司的价值观，每个团队在不清楚目标时都值得思考，自己的客户是谁，第一客户是谁。这样的思考也是解决局部利益和全局目标分歧的关键。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;极致务实&lt;/strong&gt;：从目标到每个人应该怎么做，是主管做选择，做什么不做什么的过程。对于一线研发团队，一般不需要涉及复杂的战略取舍，很多时候，就是要求我们做好聚焦，如激光一样聚焦。而取舍，多数时候都是舍的问题。一线的研发团队，&lt;strong&gt;最需要舍的，是那些华而不实、不知道能不能落地、不知道对客户价值有没有用（甚至已经知道没用）的事情。舍弃那些绩效工程、领导工程、放烟花项目、拍脑袋项目&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;如果说，团队已经有太多的事情了，并没有上面说的这些绩效工程，那还怎么聚焦？有几个简单的判断准则：&lt;/p&gt;
+
+&lt;p&gt;（1）这个事情不做了，对于组织的大目标会有什么影响？ 如果结论是没什么影响，就不必做了。&lt;/p&gt;
+
+&lt;p&gt;（2）如果我的团队，换一个其他的优秀 leader 来带领，他会继续做这个项目吗？如果结论也是不会继续，那我们自己也不用做。&lt;/p&gt;
+
+&lt;p&gt;关于这个问题，各类管理学书籍中探讨比较多，因此后面不再过多展开。这并不是因为这个话题不重要，恰恰相反，做正确的事是技术管理中最重要的话题，只是因为本书无法提供比其他材料更有指导性见解而省略。&lt;/p&gt;
+
+&lt;h2 id=&quot;2-正确的做事---降低工程复杂度和协同成本&quot;&gt;2. 正确的做事 - 降低工程复杂度和协同成本&lt;/h2&gt;
+
+&lt;h3 id=&quot;技术管理者应重视工程质量相关工作支撑团队长期发展&quot;&gt;技术管理者应重视工程质量相关工作，支撑团队长期发展&lt;/h3&gt;
+&lt;p&gt;每个技术团队要有技术负责人 tech lead。先说说&lt;strong&gt;什么是技术负责人 tech lead&lt;/strong&gt;。技术负责人负责的不是技术么？是也不是。 负责技术，但是如果没有一个“实在”的东西负责（也就是所谓抓手），其实这个角色就很难发挥作用。 这也是今天很多架构师运转不顺畅的原因，大体上都是没有足够的权责统一。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;技术负责人 tech lead 要负责系统，负责产品&lt;/strong&gt;。 每一个系统/产品，都需要有明确技术负责人。 同时 该系统内部可能还划分几个子系统，可以按照需要设定子系统的技术负责人岗位（当模块/子系统有多于一个工程师参与时）。 子系统技术负责人在技术决策上需要服从上层系统技术决策。&lt;/p&gt;
+
+&lt;p&gt;技术负责人需要承担系统&lt;strong&gt;真正 Owner 的权责，并为结果以及长期演进负责，否则就不是真正的技术负责人&lt;/strong&gt;。大部分的研发团队的管理者本身也兼任团队所负责的系统的技术负责人，但是并不是所有的管理者都有意识的做好了这项工作。当然技术负责人也可以和团队管理者角色分离。今天我们看到不少系统缺乏真正的 Owner，导致很多技术演进问题长期得不到解决，而架构师又难以落地，可以说都是技术负责人角色不清晰导致问题。&lt;/p&gt;
+
+&lt;h3 id=&quot;技术负责人如何发挥作用&quot;&gt;技术负责人如何发挥作用&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;具体来说，如何才算是做好了技术负责人的工作&lt;/strong&gt;？首先，针对我们通常意义上的技术工作的贡献，可以定义一个如下的层次模型：&lt;/p&gt;
+
+&lt;p&gt;-（Level 1）写代码（负责具体实现）
+-（Level 2）Review 代码，做方案设计（负责方案落地）
+-（Level 3）Review 技术方案设计（负责项目/落地）
+-（Level 4）建议新方向，把关新方向（负责整个领域的演进和结果）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/images/tech_manage/tech_manage04.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在这四个层次上，一线产品/系统/子系统的技术负责人应该&lt;strong&gt;能够至少覆盖 L2 的工作&lt;/strong&gt;，一线的技术负责人最好还要能够保持 Coding 的工作。而不承担技术负责人的 IC，工作一般会聚焦在 1 和 2 两层上。随着技术负责人自身能力的增长和职责的扩大，会逐渐负责多个子领域，直到负责一个较大的技术领域发展，承担的职责逐渐覆盖到从 L2 到 L3，L4。&lt;/p&gt;
+
+&lt;p&gt;具体如何做 Code Review、代码质量等工程质量相关话题，在本篇后续章节展开。这里关键强调的是，对于技术管理者，&lt;strong&gt;为了团队工程质量/复杂度的降低，必须通过技术负责人的角色长期、坚定的投入&lt;/strong&gt;。对于一线的 TLM 来说，这个技术负责人可以是自己承担，也可以安排团队内最熟悉系统/产品的同学担任，并给予充分的支持让技术负责人真正发挥作用。&lt;/p&gt;
+
+&lt;h3 id=&quot;识别团队内外部协同成本信号积极寻求解决&quot;&gt;识别团队内外部协同成本信号，积极寻求解决&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;安排清晰合理的团队内分工&lt;/strong&gt;。团队内的分工也是个技术架构问题，做好内部的分工，让团队成员可以相互信任和依赖，这是主管的核心职责。&lt;br /&gt;&lt;strong&gt;团队和其他团队边界有冲突时&lt;/strong&gt;，明确边界，解决冲突，是主管应该为团队贡献的工作。同时应该积极&lt;strong&gt;帮助团队解除阻塞&lt;/strong&gt;，通过主动协助团队解决问题或者上升解决&lt;strong&gt;阻塞。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;3-对团队的成员提供支持和帮助---让团队高效工作&quot;&gt;3. 对团队的成员提供支持和帮助 - 让团队高效工作&lt;/h2&gt;
+
+&lt;h3 id=&quot;如何更好的激励团队成员&quot;&gt;如何更好的激励团队成员&lt;/h3&gt;
+&lt;p&gt;建设一个能拿结果，有战斗力的团队，团队的成员一定是非常有动力的在工作的。如何能够达到这个状态？首先要强调是在团队的成员和主管之间&lt;strong&gt;构建信任&lt;/strong&gt;。信任的构建是双向的，在高效的组织中，如果缺乏了任何一个方向的信任，都将带来效率的下滑。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;赢得团队的信任&lt;/strong&gt;：作为主管，要能够诚实沟通、有良好的动机（客户第一、帮助员工成长等而非抢夺地盘甚至搞内部政治）、公平对待成员。这种信任来自于主管&lt;strong&gt;真诚的关注成员的发展&lt;/strong&gt;，而不只是自己阶段性的目标。事实上，做到了这一点的团队，只会更有战斗力，能够达成更好的结果。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;相信团队成员&lt;/strong&gt;：主管相信员工，需要做到的是清晰的沟通目标、相信员工的目的和动机是自我实现和带来影响力、主管要提供清晰的组织边界和团队内的结构，从而让组织成员可以相互依赖而不是相互竞争。&lt;a href=&quot;https://rework.withgoogle.com/blog/five-keys-to-a-successful-google-team/&quot;&gt;Google 内部 180 个团队的研究&lt;/a&gt; 清晰揭示了这些组织因素对于团队效率的影响，而其中最重要的是心理安全（在团队中能够安全的进取并承担风险），这需要主管能够给予员工足够的支撑，从而最大化释放出成员的意愿。组织也因此需要 &lt;a href=&quot;https://topic.atatech.org/articles/156422&quot;&gt;Blameless 的文化&lt;/a&gt;，尤其在涉及到故障、事情进展不如人意的时候，深入根因，Blame-aware 但是对复杂的问题不以简单粗暴惩戒来解决。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;同时，作为背景知识，我们每个人都应当了解工程师是如何被激励的&lt;/strong&gt;。推荐所有主管以及希望成为主管的同学仔细看一下 &lt;a href=&quot;https://www.youtube.com/watch?v=u6XAPnuFjJc&quot;&gt;RSA what motivates us&lt;/a&gt; 视频，研发主管需要理解研发活动的本质驱动力：即自主性（Autonomous）、精通（Mastery）和目标（Purpose）。理解研发活动的本质驱动力，我们可以更好的反思自己的角色定位，更多成为一个视人为人的主管，能够赋能团队，能够让同学能够有驱动力并感受到自身的成长，从而带领团队获得更好的结果。&lt;/p&gt;
+
+&lt;h3 id=&quot;通过高效的互动支持团队&quot;&gt;通过高效的互动支持团队&lt;/h3&gt;
+&lt;p&gt;在一些管理学的文章上，会把管理的风格归结为不同的类型，有教练型，有代理型等。但是从实际情况看，这些不是工作当中的真正状态。真正在工作当中，针对不同的 团队成员、或者同一个成员在不同的场景下，需要采取不同的模式。 重要的是 在每一个谈话、会议 和讨论之前，我们需要想清楚一个问题： &lt;strong&gt;今天应该用什么模式&lt;/strong&gt;？这个同学，我是应该以指导为主、支持为主还是可以授权给他？ 要有意识的问自己这些问题。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;指导和教练 Coaching&lt;/strong&gt;：适用于两种场景，（1）对于团队的新人、比较初级的工程师，需要采用教练的模式，主管应该花更多的时间，针对具体的案例 帮助同学分析、明确目标、明确路径，教会同学未来遇到同样问题时的解决方案。 具体的可以参考 GROW 模型 [1]；（2）团队成员寻求帮助，这时是 Coaching 的好机会，可以不必急于给出答案，而是帮助同学掌握解决问题的方法&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;支持 Support&lt;/strong&gt;：支持和 Coaching 不同，但可能是管理者最经常的模式，帮助团队的成员解决具体的问题，但是又不是代替成员去决策。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;代理授权 Delegation&lt;/strong&gt;：对于团队的有经验的成员，能够对某个模块、系统、方向承担起相应的职责，我们尽量将职责代理给能够承担的同学。代理是把一件事情或者一个方向的决策权交给这个同学。有同学可以被授权负责某些方向是团队逐渐成熟的很重要标志。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;达成共识 Consensus&lt;/strong&gt;：当前的问题，需要经过引导/讨论/脑爆的模式形成共识，可以设计合理的会议流程和话题引导，给大家充分表达机会，形成共识，促进更好的协同行动。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;直接下达命令 Directing&lt;/strong&gt;：总会有一些场景，因为时间紧迫，没有时间讨论形成共识，那么就明确告诉团队决策，大家按照决策执行。但是不管什么情况，管理者不能带给团队一个不敢反馈的氛围，如果因为自己的管理风格问题导致听不到声音是最危险的。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;具体的细节有很多管理/领导力的书籍可以参考，这里不展开。 关键在于我们要了解这些模式并有意识的选择和应用。&lt;/p&gt;
+
+&lt;h3 id=&quot;注重效率努力纠正一切低效的行为形式主义&quot;&gt;注重效率，努力纠正一切低效的行为、形式主义&lt;/h3&gt;
+&lt;p&gt;低效本身是让有追求的同学斗志很容易被消磨的因素。研发流程的效率（具体点很多，工具，平台，测试环境，应用架构的历史债），很多领域已经是破窗效应明显了，&lt;strong&gt;管理者重点是关注团队在研发流程中的效率，并为此负责&lt;/strong&gt;。&lt;br /&gt;会议效率低下，Top-down 的文化等，都不利于研发团队成员高效、专注的工作。 我们需要始终记得，最终工作是靠研发同学的努力完成的，作为主管，需要尽最大努力保护好同学们，让其可以专注工作，而不是用低效的各种琐碎事务干扰同学。&lt;/p&gt;
+
+&lt;h1 id=&quot;结语一切回归到人&quot;&gt;结语：一切回归到人&lt;/h1&gt;
+&lt;p&gt;对于技术管理这一节，我们从一个团队高效交付价值讲起，分解了三个不同的要素，并分析了技术管理者如何围绕这三个围绕做好自己的贡献。 所有的这些，最终回归到原点还是要回到人的身上。&lt;/p&gt;
+
+&lt;p&gt;首先，&lt;strong&gt;管理者需要为所带领的研发团队的效率负责&lt;/strong&gt;。 管理者需要明确意识到自己的这一核心职责。&lt;/p&gt;
+
+&lt;p&gt;其次，作为技术公司，我们的技术发展，技术对业务的帮助，这一切根源&lt;strong&gt;都是因为我们吸引了优秀的人才，并且这些人才在公司蓬勃发展&lt;/strong&gt;。有了这个共识，才有技术管理的变化和激活组织的思想基础。&lt;/p&gt;
+
+&lt;h1 id=&quot;实践参考&quot;&gt;实践参考&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Grow model for coaching and mentoring &lt;a href=&quot;https://www.mindtools.com/pages/article/newLDR_89.htm&quot;&gt;https://www.mindtools.com/pages/article/newLDR_89.htm&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;技术负责人管理办法样例（TRE）：&lt;a href=&quot;https://yuque.antfin.com/docs/share/061389e8-d7d3-4bec-bff6-14547ebb2d70&quot;&gt;https://yuque.antfin.com/docs/share/061389e8-d7d3-4bec-bff6-14547ebb2d70&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;P/M 双通道管理 TODO 待补充文档链接&lt;/li&gt;
+  &lt;li&gt;扩展阅读：了解员工驱动力。 RSA what motivated us https://youtu.be/u6XAPnuFjJc&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+      </item>
     
       <item>
         <title>如何做好代码评审</title>
