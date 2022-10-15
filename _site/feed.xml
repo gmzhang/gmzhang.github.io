@@ -6,8 +6,8 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <pubDate>Thu, 13 Oct 2022 22:06:50 +0800</pubDate>
-    <lastBuildDate>Thu, 13 Oct 2022 22:06:50 +0800</lastBuildDate>
+    <pubDate>Sat, 15 Oct 2022 09:07:24 +0800</pubDate>
+    <lastBuildDate>Sat, 15 Oct 2022 09:07:24 +0800</lastBuildDate>
 
     
       <item>
@@ -114,7 +114,7 @@
 
 &lt;p&gt;Kubernetes 是今天容器编排领域的事实标准，而 Docker 从诞生之日到今天都在容器中扮演着举足轻重的地位，也都是 Kubernetes 中的默认容器引擎。然而在 2020 年 12 月，Kubernetes 社区决定着手移除仓库中 Dockershim 相关代码&lt;a href=&quot;#fn:1&quot;&gt;1&lt;/a&gt;，这对于 Kubernetes 和 Docker 两个社区来说都意义重大。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://img.draveness.me/kubelet-and-containers-2021-03-10-16153845432597.png&quot; alt=&quot;kubelet-and-containers&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/images/k8s_docker/kubelet-and-containers-2021-03-10-16153845432597.png&quot; alt=&quot;kubelet-and-containers&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;图 1 - Dockershim&lt;/strong&gt;&lt;/p&gt;
 
@@ -131,7 +131,7 @@
 
 &lt;p&gt;Kubernetes 通过引入新的容器运行时接口将容器管理与具体的运行时解耦，不再依赖于某个具体的运行时实现。很多开源项目在早期为了降低用户的使用成本，都会提供开箱即用的体验，而随着用户群体的扩大，为了满足更多定制化的需求、提供更强的可扩展性，会引入更多的接口。Kubernetes 通过下面的一系列接口为不同模块提供了扩展性：&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://img.draveness.me/kubernetes-extensions-2021-03-10-16153845432607.png&quot; alt=&quot;kubernetes-extensions&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/images/k8s_docker/kubernetes-extensions-2021-03-10-16153845432607.png&quot; alt=&quot;kubernetes-extensions&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;图 2 - Kubernetes 接口和可扩展性&lt;/strong&gt;&lt;/p&gt;
 
@@ -173,7 +173,7 @@ service ImageService {
 
 &lt;p&gt;对 Kubernetes 稍有了解的人都能从上面的定义中找到一些熟悉的方法，它们都是容器运行时需要暴露给 Kubelet 的接口。Kubernetes 将 CRI 垫片实现成 gRPC 服务器与 Kubelet 中的客户端通信，所有的请求都会被转发给容器运行时处理。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://img.draveness.me/cri-and-container-runtimes-2021-03-10-16153845432613.png&quot; alt=&quot;cri-and-container-runtimes&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/images/k8s_docker/cri-and-container-runtimes-2021-03-10-16153845432613.png&quot; alt=&quot;cri-and-container-runtimes&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;图 3 - Kubernetes 和 CRI&lt;/strong&gt;&lt;/p&gt;
 
@@ -190,7 +190,7 @@ service ImageService {
 
 &lt;p&gt;与容器运行时相比，Docker 更像是一个复杂的开发者工具，它提供了从构建到运行的全套功能。开发者可以很快地上手 Docker 并在本地运行并管理一些 Docker 容器，然而在集群中运行的容器运行时往往不需要这么复杂的功能，Kubernetes 需要的只是 CRI 中定义的那些接口。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://img.draveness.me/docker-and-cri-2021-03-10-16153845432620.png&quot; alt=&quot;docker-and-cri&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/images/k8s_docker/docker-and-cri-2021-03-10-16153845432620.png&quot; alt=&quot;docker-and-cri&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;图 4 - Docker &amp;amp; CRI&lt;/strong&gt;&lt;/p&gt;
 

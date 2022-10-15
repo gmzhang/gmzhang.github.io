@@ -1,95 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- meta information -->
-<meta charset="utf-8" />
-<meta name="description"  content="Kubernetes 是今天容器编排领域的事实标准，而 Docker 从诞生之日到今天都在容器中扮演着举足轻重的地位，也都是 Kubernetes 中的默认容器引擎。然而在 2020 年 12 月，Kubernetes 社区决定着手移..." >
-<meta name="author" content="gmzhang" />
-
-<!-- Enable responsiveness on mobile devices-->
-<meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0, maximum-scale=1"
-/>
-
-<!-- title -->
-<!-- <title>为什么 Kubernetes 要替换 Docker &middot; </title> -->
-<title>为什么 Kubernetes 要替换 Docker</title>
-
-<!-- icons -->
-<link
-    rel="shortcut icon"
-    href="/public/images/favicon.ico"
-/>
-
-<!-- stylesheets -->
-<link
-    rel="stylesheet"
-    href="/public/css/responsive.gs.12col.css"
-/>
-<link rel="stylesheet" href="/public/css/animate.min.css" />
-<link rel="stylesheet" href="/public/css/main.css" />
-
-<!-- Google fonts -->
-<link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic&subset=latin-ext"
-/>
-
-
-
-<!-- feed links -->
-<link
-    rel="alternate"
-    href="http://localhost:4000/feed.xml"
-    type="application/rss+xml"
-    title=""
-/>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-RD1DSHZ3YL"
-></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-RD1DSHZ3YL");
-</script>
-
-  </head>
-  <body>
-    <div class="container azul">
-      <header class="top row gutters">
-        <div class="col span_2 center">
-          <!-- TODO: add baseurl to the logo link -->
-          <a href="http://localhost:4000" id="logo" title="Make a better world!"
-             style="background-image: url(/public/images/logo.jpg);"></a>
-        </div>
-        <nav class="col span_10 top-navbar">
-  
-  <a href="/" title="Home"
-   >Home</a>
-  
-  <a href="https://github.com/gmzhang" title="Github"
-    target="_blank" >Github</a>
-  
-  <a href="/about" title="About"
-   >About</a>
-  
-</nav>
-
-      </header>
-
-      <article class="single row gutters">
-  <time class="published" datetime="2022-09-11">11 September 2022</time>
-  <h2>为什么 Kubernetes 要替换 Docker</h2>
-
-  <p><img src="/public/images/k8s_docker/00.jpg" alt="" /></p>
+I"�#<p><img src="/public/images/k8s_docker/00.jpg" alt="" /></p>
 
 <p>Kubernetes 是今天容器编排领域的事实标准，而 Docker 从诞生之日到今天都在容器中扮演着举足轻重的地位，也都是 Kubernetes 中的默认容器引擎。然而在 2020 年 12 月，Kubernetes 社区决定着手移除仓库中 Dockershim 相关代码<a href="#fn:1">1</a>，这对于 Kubernetes 和 Docker 两个社区来说都意义重大。</p>
 
@@ -169,7 +78,7 @@ service ImageService {
 
 <p>与容器运行时相比，Docker 更像是一个复杂的开发者工具，它提供了从构建到运行的全套功能。开发者可以很快地上手 Docker 并在本地运行并管理一些 Docker 容器，然而在集群中运行的容器运行时往往不需要这么复杂的功能，Kubernetes 需要的只是 CRI 中定义的那些接口。</p>
 
-<p><img src="/public/images/k8s_docker/docker-and-cri-2021-03-10-16153845432620.png" alt="docker-and-cri" /></p>
+<p><img src="https://img.draveness.me/docker-and-cri-2021-03-10-16153845432620.png" alt="docker-and-cri" /></p>
 
 <p><strong>图 4 - Docker &amp; CRI</strong></p>
 
@@ -189,40 +98,4 @@ service ImageService {
 </ul>
 
 <p>原文链接：https://draveness.me/whys-the-design-kubernetes-deprecate-docker/</p>
-
-  <div id="disqus_thread"></div>
-<script>
-    /**
-     * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-     * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-     */
-    /*
-var disqus_config = function () {
-this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-    (function () {
-        // DON'T EDIT BELOW THIS LINE
-        var d = document,
-            s = d.createElement("script");
-
-        s.src = "//gmzhang.disqus.com/embed.js";
-
-        s.setAttribute("data-timestamp", +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript
-    >Please enable JavaScript to view the
-    <a href="https://disqus.com/?ref_noscript" rel="nofollow"
-        >comments powered by Disqus.</a
-    ></noscript
->
-
-</article>
-
-    </div>
-
-  </body>
-</html>
+:ET
