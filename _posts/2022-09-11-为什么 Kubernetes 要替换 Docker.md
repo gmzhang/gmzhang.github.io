@@ -98,5 +98,3 @@ Kubernetes 作为比较松散的开源社区，每个成员尤其是各个 SIG �
 
 *   Kubernetes 在早期版本中引入 CRI 摆脱依赖某个具体的容器运行时依赖，屏蔽底层的诸多实现细节，让 Kubernetes 能够更关注容器的编排；
 *   Docker 本身不兼容 CRI 接口，而且官方并没有实现 CRI 的打算，同时也不支持容器的一些新需求，所以 Dockershim 的维护成为了社区的想要摆脱负担；
-
-原文链接：https://draveness.me/whys-the-design-kubernetes-deprecate-docker/

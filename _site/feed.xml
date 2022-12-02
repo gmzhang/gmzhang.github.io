@@ -6,8 +6,8 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <pubDate>Fri, 02 Dec 2022 15:08:48 +0800</pubDate>
-    <lastBuildDate>Fri, 02 Dec 2022 15:08:48 +0800</lastBuildDate>
+    <pubDate>Fri, 02 Dec 2022 16:18:02 +0800</pubDate>
+    <lastBuildDate>Fri, 02 Dec 2022 16:18:02 +0800</lastBuildDate>
 
     
       <item>
@@ -113,8 +113,6 @@ service ImageService {
   &lt;li&gt;Kubernetes 在早期版本中引入 CRI 摆脱依赖某个具体的容器运行时依赖，屏蔽底层的诸多实现细节，让 Kubernetes 能够更关注容器的编排；&lt;/li&gt;
   &lt;li&gt;Docker 本身不兼容 CRI 接口，而且官方并没有实现 CRI 的打算，同时也不支持容器的一些新需求，所以 Dockershim 的维护成为了社区的想要摆脱负担；&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;原文链接：https://draveness.me/whys-the-design-kubernetes-deprecate-docker/&lt;/p&gt;
 </description>
       </item>
     
@@ -262,8 +260,6 @@ service ImageService {
 &lt;p&gt;另外，我不知道，为什么我一说这些东西，就会有很多人（包括程序员自己）来和我说我是个理想主义者，这些已经不是什么理想了，已被很多成功的公司用了很多很多年了。只是你没有见到过罢了。还有的人说，因为中国的国情不同。这更让我费解了。这让我想到了当年大清朝派了一堆人出国考察后回来后，说外国的那套共和的东西不符合中国国情，最终也在历史的潮流中被淹没掉了。另外，什么叫“中国的国情不同”？中国有全世界数一数二的互联网用户，也有全世界数一数二的市场，不再是以前那个一穷二白的年代了，中国的国情到底有哪些不同呢？&lt;/p&gt;
 
 &lt;p&gt;我不知道各位工程师是为什么活的？但我觉得，&lt;strong&gt;我们选择了一个刺激的职业，也赶上了这个行业大发展的时代，我们不妨扪心自问一下，你是否愿意让自己的能力、青春和热情就这样被磨灭了？&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;原文链接：https://coolshell.cn/articles/17497.html&lt;/p&gt;
 </description>
       </item>
     
@@ -421,8 +417,6 @@ service ImageService {
 &lt;p&gt;有一些人会跟我说，我们是实用主义，我们不需要创新，能解决当下的问题就好，所以，我们不需要新技术，现有的技术用好就行了。这类的公司，他们的技术设计第一天就在负债，虽然可以解决当下问题，但是马上就会出现新的问题，然后他们会疲于解决各种问题。最后呢，最后还是会走到新的技术上。&lt;/p&gt;
 
 &lt;p&gt;这里的逻辑很简单 —— &lt;strong&gt;进步永远来自于探索，探索是要付出代价的，但是收益更大&lt;/strong&gt;。对我而言，不敢冒险才是最大的冒险，不敢犯错才是最大的错误，害怕失去会让你失去的更多……&lt;/p&gt;
-
-&lt;p&gt;原文链接：https://coolshell.cn/articles/21672.html&lt;/p&gt;
 </description>
       </item>
     
